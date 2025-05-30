@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Caffe Casapilo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-content {
+            background: #fff;
+            padding: 30px;
+            margin-top: -80px;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+        .about-content h2 {
+            color: #c8a165;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .mission-values {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .mission-values div {
+            flex: 1;
+            min-width: 280px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #5a3a22;
+        }
+        .mission-values h3 {
+            color: #2c1e15;
+            margin-top: 0;
+        }
+        .team-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .team-member {
+            display: inline-block;
+            margin: 15px;
+            max-width: 200px;
+        }
+        .team-member .placeholder-img {
+            width: 150px;
+            height: 150px;
+            background-color: #e0c085;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c1e15;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><span class="logo_name">Caffe Casapilo</span></h1>
+            </div>
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label" aria-label="Open navigation menu">
+                <img src="images/icons/hamburger_icon.png" alt="Open Menu">
+            </label>
+            <nav id="main-nav">
+                <label for="menu-toggle-checkbox" class="menu-close-label" aria-label="Close navigation menu">
+                     <img src="images/icons/exit.png" alt="Close Menu">
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="parallax" style="min-height: 500px; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/coffee_shop2.jpeg')">
+        <div class="parallax-content">
+            <h2>Story behind the Classics</h2>
+            <p>Discover the journey behind Caffe Casapilo.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article class="about-content">
+                <br><br><br>
+                <h2>From a Long Century Dream to the Classical Creation</h2>
+                <p>Caffe Casapilo started with a long century ambition since childhood: to create a space where people could enjoy exceptional coffee in a 50s environment.
+                    Founded in 2008 by a group of friends who shared a deep passion for coffee craftsmanship,
+                    our journey began in a small, unassuming corner in Recto Avenue at Manila. We spent countless hours perfecting our roasts,
+                    experimenting with brewing methods, and designing a cafe that felt like a second home.</p>
+                <br>
+                <p>Our commitment to quality is unwavering. We meticulously source our beans from sustainable farms across the country,
+                    ensuring that every cup tells a story of its origin locally. Each batch is roasted with precision and care in-house, unlocking the
+                    unique flavors and aromas that make our coffee special and unique at the same time. We believe that great coffee has the power
+                    to connect people, inspire creativity, be classical and make positivity in all the years.</p>
+
+                <div class="mission-values">
+                    <div>
+                        <h3>Our Mission</h3>
+                        <p>To enrich lives by providing an exceptional coffee experience, fostering community, and promoting
+                            sustainable practices from bean to cup. Empowered by local culture, we strive to also promote products
+                            for all people and Filipinos to thrive in with a taste of coffee.</p>
+                    </div>
+                    <div>
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li><strong>Quality -</strong> Sourcing the best, roasting with passion, brewing with skill.</li>
+                            <li><strong>Community -</strong> Creating a welcoming space for all.</li>
+                            <li><strong>Sustainability -</strong> Ethical sourcing and environmentally conscious operations.</li>
+                            <li><strong>Passion -</strong> A genuine love for coffee and hospitality.</li>
+                            <li><strong>Culture Sharing -</strong> Sharing the culture that supports local diversity with the power of coffee</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+   <footer>
+        <p>Caffe Casapilo © <span id="currentYear">2025</span>. All Rights Reserved.</p>
+        <p>123 Mabuhay St., Brgy. Juan Dela Cruz, Manila, Philippines</p>
+    </footer>
+</body>
+</html>

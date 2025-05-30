@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Caffe Casapilo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-form-container, .contact-details-container {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c1e15;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .contact-form button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+        .contact-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-details li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .contact-details li strong {
+            color: #2c1e15;
+            margin-right: 10px;
+            min-width: 70px;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 350px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #555;
+            font-style: italic;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><span class="logo_name">Caffe Casapilo</span></h1>
+            </div>
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label" aria-label="Open navigation menu">
+                <img src="images/icons/hamburger_icon.png" alt="Open Menu">
+            </label>
+            <nav id="main-nav">
+                 <label for="menu-toggle-checkbox" class="menu-close-label" aria-label="Close navigation menu">
+                    <img src="images/icons/exit.png" alt="Close Menu">
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+                <section id="contact-form-section" class="contact-form-container" style="flex: 2; min-width: 300px;">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question, feedback, or a catering inquiry? Fill out the form below and we'll get back to you soon!</p>
+                    <form action="#" method="POST" class="contact-form">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </section>
+
+                <aside id="contact-details" class="contact-details-container" style="flex: 1; min-width: 280px;">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><strong>Address:</strong> 123 Coffee Bean Lane, Brewsville, CA 90210</li>
+                        <li><strong>Phone:</strong> <a href="tel:+15551234567" style="color: #c8a165; text-decoration: none;">(555) 123-4567</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:hello@thedailygrind.com" style="color: #c8a165; text-decoration: none;">hello@thedailygrind.com</a></li>
+                    </ul>
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                    <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+
+                    <div class="map-placeholder my-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247126.2530058928!2d120.99065144177511!3d14.584086438000985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9077a26797f%3A0x4a9ef37ecc3e70c3!2sPasig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1685499628000!5m2!1sen!2sph"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Caffe Casapilo © <span id="currentYear">2025</span>. All Rights Reserved.</p>
+        <p>123 Mabuhay St., Brgy. Juan Dela Cruz, Manila, Philippines</p>
+    </footer>
+</body>
+</html>

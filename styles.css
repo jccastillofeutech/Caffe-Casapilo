@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mrs+Saint+Delafield&family=Passions+Conflict&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Californian FB', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #2c1e15;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 70px;
+    border-bottom: #c8a165 3px solid;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+}
+
+header #logo {
+    flex-shrink: 0;
+}
+
+header #logo h1 {
+    margin: 0;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+header #logo .logo_name {
+     color: #c8a165;
+}
+
+header nav {
+    position: static;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav .current a,
+header nav li a:hover {
+    color: #c8a165;
+}
+header nav li a:hover {
+    transform: translateY(-2px);
+}
+
+#menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle-label, .menu-close-label {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1002;
+}
+
+.menu-toggle-label img, .menu-close-label img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.menu-close-label {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+
+
+main {
+    flex-grow: 1;
+    padding-bottom: 20px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: auto;
+    color: #fff;
+    background-color: #2c1e15;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+h1, h2, h3 {
+    color: #2c1e15;
+    margin-bottom: 15px;
+}
+
+h1.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/coffee_shop1.jpeg');
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.parallax-content {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.parallax-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    background: #c8a165;
+    color: #2c1e15;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background: #b08f58;
+    color: #fff;
+}
+
+
+@media(max-width: 900px){
+    .menu-toggle-label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        order: 3;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        left: auto;
+        width: 280px;
+        height: 100%;
+        background-color: #2c1e15;
+        overflow-y: auto;
+        transition: right 0.3s ease-in-out;
+        z-index: 1001;
+        padding-top: 60px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    }
+
+    #menu-toggle-checkbox:checked ~ nav {
+        right: 0;
+    }
+    #menu-toggle-checkbox:checked ~ nav .menu-close-label {
+        display: block;
+    }
+    #menu-toggle-checkbox:checked ~ .menu-toggle-label {
+        display: none;
+    }
+
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header nav li {
+        width: 100%;
+    }
+
+    header nav li a {
+        display: block;
+        padding: 15px 25px;
+        width: 100%;
+        border-bottom: 1px solid #443123;
+        font-size: 17px;
+    }
+    header nav li:last-child a {
+         border-bottom: none;
+    }
+
+    header #logo h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 768px){
+    .parallax {
+        min-height: 300px;
+    }
+    .parallax-content h2 {
+        font-size: 2em;
+    }
+    .parallax-content p {
+        font-size: 1em;
+    }
+
+    h1.page-title {
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 480px){
+    header #logo h1 {
+        font-size: 32px;
+    }
+    .parallax {
+        min-height: 250px;
+    }
+    .parallax-content h2 {
+        font-size: 1.8em;
+    }
+    header nav {
+        width: 250px;
+        right: -250px;
+    }
+    #menu-toggle-checkbox:checked ~ nav {
+        right: 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-1 { margin-top: 1rem; margin-bottom: 1rem; }
+.my-2 { margin-top: 2rem; margin-bottom: 2rem; }
+.py-1 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-2 { padding-top: 2rem; padding-bottom: 2rem; }
+
+.section {
+    padding: 40px 0;
+}
+
+.section-light {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.section-dark {
+    background-color: #e0c085;
+    color: #2c1e15;
+    border-top: 1px solid #c8a165;
+    border-bottom: 1px solid #c8a165;
+}
+.section-dark h2, .section-dark h3 {
+    color: #2c1e15;
+}

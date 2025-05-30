@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - The Daily Grind</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-item {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 5px solid #c8a165;
+        }
+        .service-item h3 {
+            color: #2c1e15;
+            margin-top: 0;
+        }
+        .service-item p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .service-item .price-info {
+            font-style: italic;
+            color: #5a3a22;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1><span class="logo_name">Caffe Casapilo</span></h1>
+            </div>
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label" aria-label="Open navigation menu">
+                <img src="images/icons/hamburger_icon.png" alt="Open Menu">
+            </label>
+            <nav id="main-nav">
+                <label for="menu-toggle-checkbox" class="menu-close-label" aria-label="Close navigation menu">
+                    <img src="images/icons/exit.png" alt="Close Menu">
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="current"><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">What We Offer</h1>
+
+            <section id="our-services" class="section">
+                <div class="service-item">
+                    <h3>Coffee Catering</h3>
+                    <p>Caffe Casapilo experience to your next event! We offer full-service coffee catering for meetings, parties, weddings, and more. Our mobile espresso bar and professional baristas will delight your guests. Photographs are also included in the package.</p>
+                    <p class="price-info">Packages start from ₱4000 to ₱7000 (depending on the venue size). Contact us for a custom quote.</p>
+                    <a href="contact.html" class="button">Inquire About Catering</a>
+                </div>
+
+                <div class="service-item">
+                    <h3>Bean Package Deliveries and Subscriptions</h3>
+                    <p>Wanna try our best coffee beans? Sign up for our bean subscription service and get freshly roasted beans delivered to your door weekly, bi-weekly, or monthly. Choose from our signature blends or explore single-origin options.</p>
+                    <p class="price-info">Subscriptions from ₱1000 to ₱2500 per shipment.</p>
+                    <a href="#" class="button" style="background-color: #5a3a22; color: #fff;" onclick="alert('Subscriptions coming soon!'); return false;">
+                        Explore Subscriptions (Coming Soon!)
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <h3>Barista Workshops</h3>
+                    <p>Want to learn the art of coffee making? Join our hands-on barista workshops! We cover everything from espresso basics and milk steaming to latte art and home brewing techniques. Perfect for coffee enthusiasts of all levels. Might include certifications (TBA)</p>
+                    <p class="price-info">Workshops from ₱2100 per person.</p>
+                    <a href="contact.html#workshops-enquiry" class="button">Book a Workshop</a>
+                </div>
+
+                <div class="service-item">
+                    <h3>Coffee Partnerships</h3>
+                    <p>Partner with Caffe Casapilo for your cafe, restaurant, or office. We offer competitive pricing on our freshly roasted wholesale coffee beans, along with equipment consultation and training support to ensure you're serving the best.</p>
+                    <p class="price-info">Contact us for our wholesale catalog and pricing.</p>
+                    <a href="contact.html#wholesale-enquiry" class="button">Wholesale Enquiries</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+   <footer>
+        <p>Caffe Casapilo © <span id="currentYear">2025</span>. All Rights Reserved.</p>
+        <p>123 Mabuhay St., Brgy. Juan Dela Cruz, Manila, Philippines</p>
+    </footer>
+</body>
+</html>
